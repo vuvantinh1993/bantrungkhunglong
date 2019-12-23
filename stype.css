@@ -1,0 +1,9 @@
+body{
+    background: black url(img/background.png) no-repeat center top;
+}
+
+canvas{
+    border: 1px solid green;
+    margin:  170px auto 0px auto;
+    display: block;
+}
