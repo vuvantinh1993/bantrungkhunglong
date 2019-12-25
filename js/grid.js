@@ -32,9 +32,9 @@ class grid {
 
         this.balls.forEach((line) => {
             line.forEach((ball) => {
-                ball.draw();
-            })
-        });
+                ball.update();
+            });
+        })
     }
 
     draw() {

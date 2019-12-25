@@ -14,7 +14,8 @@ class ball {
 
     calculatePos() {
         this.x = Ball_Radius + Ball_Diameter * this.col;
-        this.y = this.game.grid.y - Row_height * this.row;
+        this.y = this.game.grid.y - (Row_height * this.row);
+
     }
 
     getrandomColor() {
