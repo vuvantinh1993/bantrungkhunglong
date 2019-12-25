@@ -13,6 +13,9 @@ class game {
         this.canvas.height = Game_height;
         document.body.appendChild(this.canvas);
 
+        //create Grid
+        this.grid = new grid(this);
+
         //create ball
         this.bulletball = new bulletBall(this);
 
@@ -51,12 +54,14 @@ class game {
 
     update() {
         this.bulletball.update();
+        this.grid.update();
     }
 
     draw() {
         this.context.clearRect(0, 0, Game_width, Game_height)
         this.arrow.draw();
         this.bulletball.draw();
+        this.grid.draw();
     }
 }
 

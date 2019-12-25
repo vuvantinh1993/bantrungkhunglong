@@ -2,12 +2,12 @@ class bulletBall {
     constructor(game) {
         this.game = game;
         this.image = null;
-        this.isimageLoad = false;
         this.createStartPropeties();
-        this.loadimage();
+
     }
 
     createStartPropeties() {
+        this.isimageLoad = false;
         this.speed = Ball_sreed;
         this.speedX = 0;
         this.speedY = 0;
@@ -16,6 +16,7 @@ class bulletBall {
         this.x = Bullet_ball_Start_X;
         this.y = Bullet_ball_Start_Y;
         this.color = this.getrandomColor();
+        this.loadimage();
     }
 
     loadimage() {
